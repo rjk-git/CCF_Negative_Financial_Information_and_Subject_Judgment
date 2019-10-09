@@ -22,7 +22,6 @@ from data.scripts.dataloader import ClassDataLoader, DatasetAssiantTransformer
 from data.scripts.dataset import ClassDataset, ClassTestDataset
 from data.scripts.vocab import load_label_vocab
 from models.BertClass import BertClass
-from models.MaskedCELoss import MaskedCELoss
 from utils import config_logger, get_entities
 
 
