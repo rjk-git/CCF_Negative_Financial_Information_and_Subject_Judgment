@@ -81,5 +81,6 @@ class PickKeyEntity(object):
 
 
 if __name__ == "__main__":
-    pickKeyEntity = PickKeyEntity("negative_result.csv", "Train_Data.csv", "Test_Data.csv")
+    pickKeyEntity = PickKeyEntity("../results/negative_result.csv",
+                                  "../data/Train_Data.csv", "../data/Test_Data.csv")
     pickKeyEntity.run()
