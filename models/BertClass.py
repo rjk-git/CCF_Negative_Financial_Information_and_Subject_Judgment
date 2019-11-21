@@ -14,6 +14,6 @@ class BertClass(nn.Block):
 
     def forward(self, content, token_types, valid_len):
         bert_output = self.bert(content, token_types, valid_len)
-        bert_output = bert_output[:, 1, :]
+        bert_output = bert_output[:, 0, :]
         output = self.output_dense(bert_output)
         return output
